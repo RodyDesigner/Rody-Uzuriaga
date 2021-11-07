@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Poppins",
+        sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.promo {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__card {
+        display: flex;
+        flex-wrap: wrap;
+
+        &-left {
+            margin: 0 auto;
+            padding-top: 43px;
+            width: 400px;
+            text-align: center;
+            background: linear-gradient(46deg, #fdba8a, #85929c8c);
+            box-shadow: black 1px 10px 100px -40px;
+        }
+
+        &-right {
+            margin: 0 auto;
+            padding-top: 34px;
+            padding-left: 30px;
+            padding-right: 30px;
+            width: 480px;
+            background-color: #fff;
+        }
+    }
+
+    &__img {
+        width: 205px;
+        height: 205px;
+        overflow: hidden;
+        border-radius: 100%;
+        margin: 0 auto 34px auto;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__name {
+        font-weight: 700;
+        font-size: 27px;
+    }
+
+    &__underline {
+        width: 50px;
+        height: 3px;
+        background: rgb(120, 2, 255);
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+
+    &__job {
+        margin-top: 25px;
+        letter-spacing: 0.25rem;
+        font-weight: 300;
+    }
+
+    &__social {
+        margin-top: 51px;
+        padding: 14px 100px;
+        display: flex;
+        justify-content: space-between;
+        background-color: #fff;
+        list-style-type: none;
+
+        li {
+            a {
+                color: #000;
+
+            }
+
+            font-size: 20px;
+        }
+    }
+
+    &__title {
+        font-size: 100px;
+        font-weight: 700;
+    }
+
+    &__subtitle {
+        font-size: 25px;
+    }
+
+    &__descr {
+        margin-top: 34px;
+        line-height: 1.5em;
+        font-size: 17px;
+        font-weight: 300;
+    }
+}
+
+.button {
+    width: 130px;
+    height: 35px;
+    background: none;
+    border-radius: 24px;
+    border: 0.12rem solid black;
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 38px;
+    transition: 0.5s all;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(120, 2, 255);
+        color: #fff;
+        border: 0.12rem solid rgb(120, 2, 255);
+    }
+
+    &_active {
+        background-color: rgb(120, 2, 255);
+        border: 0.12rem solid rgb(120, 2, 255);
+        color: #fff;
+
+        &:hover {
+            background-color: #fff;
+            border: 0.12rem solid rgb(120, 2, 255);
+
+            color: black;
+        }
+    }
+}
+
+@media(max-width : 800px) {
+    .promo {
+        &__card {
+            margin-top: 200px;
+
+            &-right {
+                width: 400px;
+            }
+        }
+    }
+}
